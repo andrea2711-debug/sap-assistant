@@ -1,0 +1,1579 @@
+﻿MANUALE SAP 
+Rete Vendita Unieuro
+Preparato da:
+	Autore 
+	Core Team
+	Società 
+	EY, Abstract
+	Data presentazione 
+	24.11.2025
+	
+
+
+
+  
+
+0. NAVIGATORE .................................................................................................................................. 4 
+NAVIGATORE – ASSISTENZE E RIPARAZIONI .......................................................................................................... 4 NAVIGATORE – STORNI ASSISTENZE E RIPARAZIONI ................................................................................................ 5 NAVIGATORE – RESI CLIENTE............................................................................................................................ 5 NAVIGATORE – RESI FORNITORE ....................................................................................................................... 6 NAVIGATORE – ACQUISTI FORNITORE ................................................................................................................. 6 NAVIGATORE – PROCESSI PASSIVI...................................................................................................................... 7 NAVIGATORE – INVENTARIO ............................................................................................................................. 7 NAVIGATORE – PROCESSI INTERNI ..................................................................................................................... 8 NAVIGATORE – PROCESSI ATTIVI ....................................................................................................................... 8 NAVIGATORE – REPORTISTICA .......................................................................................................................... 9 
+1. INTRODUZIONE ............................................................................................................................ 10 
+1.1 COS’È SAP?...................................................................................................................................10 1.2 MAGAZZINI LOGICI............................................................................................................................11 1.3 OGGETTI SAP..................................................................................................................................12 1.4 PROCESSO DI ASSISTENZE/RIPARAZIONI..................................................................................................13 
+1.4.1 Assistenze clienti con invio al CAT..........................................................................................13 1.4.2 Riparazioni Unieuro con invio al CAT ......................................................................................15 
+2. GLOSSARIO SAP ........................................................................................................................... 16 
+2.1 SEZIONI DI UN DOCUMENTO ................................................................................................................16 2.2 OGGETTI SAP –DETTAGLIO.................................................................................................................18 2.2.1 Oggetti standard SAP ............................................................................................................18 2.2.2 Altri oggetti ...........................................................................................................................20 2.3 DESCRIZIONE SIMBOLI E MESSAGGI .......................................................................................................21 
+3. ACCEDERE A SISTEMA................................................................................................................... 22 
+3.1 ACCESSO A SISTEMA – LOGON .............................................................................................................22 3.2 SCHERMATA INIZIALE – LAUNCHPAD......................................................................................................25 
+4. APPLICAZIONI .............................................................................................................................. 26 
+4.1 AFTER SALES COCKPIT.......................................................................................................................26 4.1.1 Resi web...............................................................................................................................27 4.1.2 Scheda cliente con riferimento ..............................................................................................33 4.1.3 Scheda cliente senza riferimento ...........................................................................................36 
+4.2 MONITORA RIMBORSI CLIENTE..............................................................................................................40 4.2.1 Reso cliente web ..................................................................................................................42 4.2.2 Assistenza/riparazione cliente offline.....................................................................................43 
+4.3 ACQUISISCI RISULTATI DEL CONTROLLO..................................................................................................49 4.4 MONITOR LAVORAZIONE ESTERNA .........................................................................................................53 4.5 REPORT RIPARAZIONI.........................................................................................................................58 4.6 CRUSCOTTO ENTRATE MERCI ..............................................................................................................62 
+4.6.1 Entrata di Assistenze/Riparazioni...........................................................................................63 4.6.2 Entrata di Acquisti da Fornitore..............................................................................................66 4.6.3 Entrata di Trasferimenti interni...............................................................................................77 
+4.7 CREA CONSEGNA IN USCITA – CON RIFERIMENTO A ORDINE..........................................................................80 4.8 CREA ORDINI DI VENDITA ....................................................................................................................82 4.8.1 Vendita NATO .......................................................................................................................83 4.8.2 Vendita PA............................................................................................................................84 4.8.3 Vendite Tim e Vodafone.........................................................................................................88 4.8.4 Reso NATO ...........................................................................................................................90 4.9 MODIFICA CONSEGNA IN USCITA ..........................................................................................................92
+1 
+  
+
+4.9.1 Modifica dati della consegna .................................................................................................93 4.9.2 Storno consegna in uscita .....................................................................................................95 4.10 GESTISCI CONSEGNE IN USCITA............................................................................................................97 4.10.1 Registrare l’uscita merci........................................................................................................98 4.10.2 Storno uscita merci.............................................................................................................102 4.11 CREA TRASFERIMENTO STOCK ............................................................................................................105 4.12 CREA ORDINE D’ACQUISTO ...............................................................................................................108 4.12.1 Gestione dei resi fornitore ...................................................................................................109 4.12.2 Gestione delle riparazioni merce Unieuro.............................................................................112 4.12.3 Trasferimenti da Piattaforma ...............................................................................................116 4.12.4 Trasferimenti interni tra PdV e verso CRR/Reverse ................................................................118 4.12.5 Ritiro dotazioni aziendali .....................................................................................................120 4.13 I MIEI ORDINI D’ACQUISTO.................................................................................................................122 4.13.1 Trasferimenti da PdV verso CRR/Reverse..............................................................................124 4.14 RICEVI MATERIALI DI SOSTITUZIONE......................................................................................................128 4.16 MODIFICA CONSEGNA IN ENTRATA ......................................................................................................131 4.17 MONITORA RIMBORSI FORNITORE........................................................................................................133 4.18 PROGRAMMA FORZATURE PREZZO .......................................................................................................136 4.18.1 Caricatore Prezzi Forzati .....................................................................................................137 4.18.1.1 Caricamento manuale ........................................................................................................138 4.18.2 Reportistica – valori storic. ..................................................................................................142 4.19 STAMPA ETICHETTE .........................................................................................................................144 4.20 CREA CORREZIONE STOCK ................................................................................................................147 4.21 CRUSCOTTO CONTESTAZIONI FORNITORI..............................................................................................149 4.21.1 Inserire Contestazione ........................................................................................................150 4.21.2 Consultare/Modificare contestazione ..................................................................................152 4.22 MODIFICA ORDINI DI VENDITA ............................................................................................................155 4.22.1 Vendita NATO .....................................................................................................................156 4.22.2 Vendite Tim e Vodafone - Storno ..........................................................................................158 4.22.3 Rifiuto Vendite Affiliati (ordine creato da Agente)...................................................................159 4.23 CARICATORE ORDINI PULL ................................................................................................................161 4.24 REGISTRA MOVIMENTO MERCI ............................................................................................................165 4.24.1 Storno scheda di riparazione cliente ....................................................................................166 4.24.2 Scarico uso interno .............................................................................................................167 4.25 CREA CONSEGNA IN USCITA – SENZA RIFERIMENTO A ORDINE .....................................................................170 4.26 MODIFICA ORDINE D’ACQUISTO .........................................................................................................174 4.27 STORNA UM – CONSEGNA IN USCITA ...................................................................................................178 
+5. STORNO SCHEDA DI RIPARAZIONE...............................................................................................180 
+5.1 STORNO DOCUMENTAZIONE PER INSERIMENTO CODICE CAT ERRATO IN FASE DI APERTURA SCHEDA .....................180 5.2 STORNO PER INSERIMENTO CODICE CAT ERRATO PER SCHEDA CON CAUSALE “CAT NON NOTO” ........................191 5.3 STORNO DOCUMENTAZIONE PER INSERIMENTO MATERIALE ERRATO IN FASE DI APERTURA SCHEDA CON CAT NON NOTO 203 
+6. INVENTARIO ................................................................................................................................205 
+6.1 APPLICAZIONI SAP .........................................................................................................................205 6.1.1 Inventario da calendario......................................................................................................206 6.1.2 Inventario libero..................................................................................................................215 6.1.3 Conta giacenza...................................................................................................................218 
+6.2 APPLICAZIONE MOBILE.....................................................................................................................219 6.2.1 Inventario da calendario......................................................................................................219 6.2.2 Inventario libero e conta giacenza........................................................................................221 
+7. REPORTISTICA .............................................................................................................................222
+2 
+  
+
+7.1 REPORTISTICA MATERIALI .................................................................................................................223 7.1.1 Versione per PdV ................................................................................................................224 7.1.2 Versione light......................................................................................................................227 7.1.3 Consumi mensili.................................................................................................................229 
+5.1 VISUALIZZARE ARTICOLO...................................................................................................................231 5.2 VISUALIZZA RIEPILOGO STOCK............................................................................................................233 5.3 REPORT DI SELLOUT ........................................................................................................................235 
+5.3.1 Fatturato per Maride ...........................................................................................................236 5.3.2 Fatturato “Esploso” ............................................................................................................238 5.4 REPORT VENDITE ............................................................................................................................239 5.4.1 Ordini di vendita..................................................................................................................239 5.4.2 Ordini di Trasferimento Stock...............................................................................................241 5.5 VISUALIZZA CONSEGNA IN USCITA .......................................................................................................242 5.5.1 Visualizzazione DDT ............................................................................................................245 5.6 VISUALIZZA ORDINE D’ACQUISTO ........................................................................................................247 5.7 VISUALIZZA ORDINI DI VENDITA ...........................................................................................................249 5.7.1 Visualizzazione flusso documenti ........................................................................................250 5.8 VISUALIZZA LISTA DOCUMENTI MATERIALE..............................................................................................252 5.9 VISUALIZZA DOCUMENTI D’ACQUISTO PER MATERIALE...............................................................................254 5.10 VISUALIZZAZIONE ANAGRAFICHE CLIENTI E PARTNER ................................................................................257 5.11 VISUALIZZA STOCK MAGAZZINO PER MATERIALE.......................................................................................263 5.12 VISUALIZZA STOCK IN TRANSITO ..........................................................................................................265 5.12.1 Esportazione in Excel ..........................................................................................................267 5.12.2 Visualizzazione del documento d’acquisto associato............................................................268 5.12.3 Visualizzazione del flusso documentale ...............................................................................269 5.12.4 Visualizzazione dello stock ..................................................................................................270 5.13 DISTINTA BASE MULTILIVELLO.............................................................................................................271 5.14 VISUALIZZA CONSEGNA IN ENTRATA .....................................................................................................273 
+6. MAGAZZINI LOGICI – DETTAGLIO ..................................................................................................275 
+6.1 TABELLA MAGAZZINI E LEGAME CON DEPOSITI STRIKE ...............................................................................275 6.2 LISTA MAGAZZINI ............................................................................................................................276 6.2.1 Magazzino Generale – M001 ................................................................................................276 6.2.2 Magazzino Presso Hub – M052.............................................................................................276 6.2.3 Magazzino Da ispezionare – M053........................................................................................276 6.2.4 Magazzino Omnichannel web – M054...................................................................................276 6.2.5 Magazzino Prenotazioni Offline – M055.................................................................................277 6.2.6 Magazzino Ricondizionati – M056.........................................................................................277 6.2.7 Magazzino Lunga degenza – M057........................................................................................277 6.2.8 Magazzino Conto deposito – M058 .......................................................................................277 6.2.9 Magazzino Danneggati negozio – M051.................................................................................277 6.2.10 Magazzino Buy & Sell – M014 ...............................................................................................277 6.2.11 Magazzino Danneggiati cliente – M050 .................................................................................278 6.2.12 Lista spostamenti tra magazzini consentiti ...........................................................................278
+3 
+  
+
+0.Navigatore 
+Navigatore – Assistenze e Riparazioni
+Casistica 
+	Step di processo 
+	App 
+	Capitolo
+	Assistenza  
+cliente con invio  al CAT
+	1. Creazione scheda cliente 
+	After Sales Cockpit 
+	4.1
+	2. Visualizzazione scheda 
+	Monitora rimborsi  
+cliente 
+	4.2
+	3. Inserimento codice CAT se non noto in precedenza (opzionale)
+	Acquisisci risultati del  controllo 
+	4.3
+	4. Invio del prodotto al CAT - consegna in uscita ed uscita  merci
+	Monitor lavorazione  
+esterna
+	4.4
+	5. Inserimento aggiornamento in tabella monitoraggio stati 
+	Report riparazioni 
+	4.5
+	6. Ricezione del prodotto riparato - consegna in entrata ed  entrata merci 
+	Cruscotto entrate merci 
+	4.6
+	7. Riconsegna al cliente e chiusura scheda con causale 
+	Monitora rimborsi  
+cliente 
+	4.2
+	Assistenza  
+cliente con invio  al CAT, in  
+garanzia non  
+riparabile
+	1-5. Fare riferimento agli step della casistica "Assistenza  cliente con invio al CAT" 
+	- 
+	-
+	6. Registrazione entrata merci dal CAT (logica non fisica) 
+	Cruscotto entrate merci 
+	4.6
+	7. Registrazione uscita merci verso Fornitore 
+	Crea consegna in uscita 
+	4.7
+	8. Inserimento dettaglio di chiusura riparazione 
+	Monitora rimborsi  
+cliente 
+	4.2
+	Assistenza  
+cliente con invio  al CAT, fuori  
+garanzia  
+riparabile
+	1-4. Fare riferimento agli step della casistica "Assistenza  cliente con invio al CAT" 
+	- 
+	-
+	5. Ricezione comunicazione da CAT che prodotto è fuori  garanzia + preventivo riparazione e aggiornamento in tabella  monitoraggio stati in base a interazioni con il cliente
+	Report riparazioni 
+	4.5
+	6. Ricezione del prodotto riparato - consegna in entrata ed  entrata merci 
+	Cruscotto entrate merci 
+	4.6
+	7. Riconsegna al cliente e chiusura scheda con causale 
+	Monitora rimborsi  
+cliente 
+	4.2
+	Assistenza  
+cliente con  
+riparazione in  
+PDV
+	1. Creazione scheda cliente 
+	After Sales Cockpit 
+	4.1
+	2. Visualizzazione scheda 
+	Monitora rimborsi  
+cliente 
+	4.2
+	3. Aggiornamento scheda con avanzamenti 
+	Report riparazioni 
+	4.5
+	4. Cambio stato con esito riparazione nell'ordine di  riparazione 
+	Report riparazioni 
+	4.5
+	5. Creazione documento per consegna a cliente e  registrazione uscita merci verso il cliente
+	Monitora rimborsi  
+cliente 
+	4.2
+	6. Inserimento dettaglio di chiusura riparazione 
+	Monitora rimborsi  
+cliente 
+	4.2
+	Assistenza  
+cliente con  
+riparazione in  
+PDV, in garanzia  non riparabile
+	1-4. Fare riferimento agli step della casistica "Assistenza  cliente con riparazione in PDV" 
+	- 
+	-
+	5. Registrazione uscita merci verso Fornitore 
+	Crea consegna in uscita 
+	4.7
+	6. Inserimento dettaglio di chiusura riparazione 
+	Monitora rimborsi  
+cliente 
+	4.2
+	Assistenza  
+cliente con  
+riparazione in  
+PDV, fuori 
+	1-3. Fare riferimento agli step della casistica "Assistenza  cliente con riparazione in PDV" 
+	- 
+	-
+	4. Cambio stato con esito prodotto fuori garanzia +  preventivo riparazione e aggiornamento in tabella  monitoraggio stati in base a interazioni con il cliente
+	Report riparazioni 
+	4.5
+	
+
+
+
+4 
+garanzia  riparabile 
+5. Creazione documento per consegna a cliente e  registrazione uscita merci verso il cliente 
+  
+
+Monitora rimborsi  
+cliente 4.2 
+
+
+
+
+	6. Inserimento dettaglio di chiusura riparazione 
+	Monitora rimborsi  
+cliente 
+	4.2
+	Assistenza  
+cliente con  
+riparazione a  
+domicilio
+	1. Creazione scheda cliente 
+	After Sales Cockpit 
+	4.1
+	2. Aggiornamento tabella monitoraggio stati e inserimento  dettaglio chiusura 
+	Report riparazioni 
+	4.5
+	Riparazione  
+merce Unieuro  con invio al CAT
+	1. Spostamento in magazzino dedicato segregato 
+	Crea trasferimento stock 
+	4.11
+	2. Creazione ordine di riparazione 
+	Crea ordine d'acquisto 
+	4.12
+	3. Registrazione uscita merci 
+	Monitor lavorazione  
+esterna
+	4.4
+	4. Inserimento aggiornamento in tabella monitoraggio stati 
+	Report riparazioni 
+	4.5
+	5. Registrazione entrata merci 
+	Cruscotto entrate merci 
+	4.6
+	6. Inserimento dettaglio di chiusura riparazione 
+	Report riparazioni 
+	4.5
+	Riparazione  
+merce Unieuro in  PDV
+	1. Spostamento in magazzino a scelta dell'operatore 
+	Crea trasferimento stock 
+	4.11
+	2. Aggiornamento tabella monitoraggio stati e inserimento  dettaglio chiusura 
+	Report riparazioni 
+	4.5
+	
+
+
+
+Navigatore – Storni Assistenze e Riparazioni 
+Casistica 
+	Capitolo
+	Storno documentazione per inserimento codice CAT errato in fase di apertura scheda 
+	5.1
+	Storno per inserimento codice CAT errato per scheda con causale “CAT non noto” 
+	5.2
+	Storno documentazione per inserimento materiale errato in fase di apertura scheda con CAT non noto 
+	5.3
+	
+
+
+
+Navigatore – Resi cliente
+Casistica 
+	Step di processo 
+	App 
+	Capitolo
+	Reso cliente web  con rimborso 
+	1. Ricerca OdV con riferimento ordine Hybris e richiesta  generazione RMA 
+	After Sales Cockpit 
+	4.1
+	2. Spostamento della merce dal magazzino "Da ispezionare"  ad un magazzino logico diverso 
+	Crea trasferimento stock 
+	4.11
+	Reso cliente web  con buono 
+	1. Ricerca OdV con riferimento ordine Hybris e richiesta  generazione RMA 
+	After Sales Cockpit 
+	4.1
+	2. Stampa buono 
+	After Sales Cockpit 
+	4.1
+	3. Spostamento della merce dal magazzino "Da ispezionare"  ad un magazzino logico diverso 
+	Crea trasferimento stock 
+	4.11
+	Reso B2B 
+	1. Creazione consegna in entrata e registrazione entrata merci 
+	Crea consegna in uscita 
+	4.7
+	Reso NATO 
+	1. Creazione ordine di reso ed entrata merce automatica 
+	Crea ordini di vendita 
+	4.8
+	
+
+
+
+5 
+  
+
+Navigatore – Resi Fornitore 
+Casistica 
+	Step di processo 
+	App 
+	Capitolo
+	Reso a fornitore
+	1. Creazione ordine di reso verso fornitore 
+	Crea ordine d'acquisto 
+	4.12
+	2. Creazione Consegna in Uscita 
+	I miei ordini d'acquisto 
+	4.13
+	3. Registrazione uscita merci
+	Modifica Consegna in  Uscita 
+Gestisci consegne in  uscita
+	4.9  
+4.10
+	4. Per le righe nate come reso per accredito per cui è stato  ricevuto un prodotto sostitutivo, modifica dell'ordine a livello  di riga evidenziando il cambio di fattispecie
+	Modifica Consegna in  Uscita 
+Gestisci consegne in  uscita
+	4.9  
+4.10
+	5. Creazione dell'ordine di reintegro 
+	Ricevi materiali di  
+sostituzione 
+	4.14
+	6. Registrazione entrata merci 
+	Modifica consegna in  entrata
+	4.16
+	Stato  
+avanzamento resi  a fornitore
+	Monitoraggio dello stato di avanzamento dei resi a fornitore 
+	Monitora rimborsi  
+fornitore 
+	4.17
+	
+
+
+
+Navigatore – Acquisti Fornitore
+Casistica 
+	Step di processo 
+	App 
+	Capitolo
+	Acquisti da  
+Fornitore
+	1. Stampa etichette merci in entrata 
+	Stampa etichette 
+	4.19
+	2. Registrazione entrata merci 
+	Cruscotto entrate merci 
+	4.6
+	Acquisti da  
+Fornitore – 
+Discrepanze
+	1-2. Fare riferimento agli step della casistica "Acquisti da  Fornitore" 
+	- 
+	-
+	3. Rilevazione discrepanza 
+	Cruscotto entrate merci 
+	4.6
+	Stato  
+avanzamento  
+acquisti da  
+fornitore
+	Monitoraggio dello stato di avanzamento degli acquisti da  fornitore
+	Visualizza ordine  
+d’acquisto 
+	7.7
+	
+
+
+
+6 
+  
+
+Navigatore – Processi passivi 
+Casistica 
+	Step di processo 
+	App 
+	Capitolo
+	Replenishment  da Piattaforma  (Pull)
+	1a. Creazione ordine di trasferimento da Piattaforma 
+	Crea ordine d'acquisto 
+	4.12
+	1b. Creazione ordine di trasferimento massivo da  Piattaforma 
+	Caricatore ordini Pull 
+	4.23
+	2. Stampa dell'ordine appena creato [EVENTUALE] 
+	Visualizza documenti  d’acquisto per materiale 
+	7.10
+	3. Modifica dell'ordine appena creato [EVENTUALE] 
+	Modifica ordine  
+d’acquisto 
+	4.26
+	Trasferimenti  
+interni tra PdV in  SAP - PDV  
+destinatario
+	1a. Creazione ordine di trasferimento da altro PDV 
+	Crea ordine d'acquisto 
+	4.12
+	1b. Creazione ordine di trasferimento massivo da altro PDV 
+	Caricatore ordini Pull 
+	4.23
+	2. Stampa dell'ordine appena creato [EVENTUALE] 
+	Visualizza documenti  d’acquisto per materiale 
+	7.10
+	3. Modifica dell'ordine appena creato [EVENTUALE] 
+	Modifica ordine  
+d’acquisto 
+	4.26
+	4. Registrazione entrata merci 
+	Cruscotto entrate merci 
+	4.6
+	Trasferimenti  
+interni tra PdV in  SAP - PDV  
+mittente
+	1a. Ordine accettato: Creazione consegna in uscita 
+	I miei ordini d'acquisto 
+	4.13
+	2. Registrazione uscita merci 
+	Gestisci consegne in  uscita 
+	4.10
+	1b. Ordine rifiutato (in parte o in toto): cancellazione  riga/righe dell’ordine
+	Modifica ordine  
+d’acquisto 
+	4.26
+	Ricezione merce  per mandato  
+all'incasso  
+Smartbox e  
+Cofanetti
+	1.Stampa etichette merci in entrata [EVENTUALE] 
+	Stampa etichette 
+	4.19
+	2. Registrazione entrata merci 
+	Crea correzione stock 
+	4.20
+	
+
+
+
+Navigatore – Inventario
+Casistica 
+	Capitolo
+	Applicazioni SAP 
+	6.1
+	Applicazione mobile 
+	6.2
+	
+
+
+
+7 
+  
+
+Navigatore – Processi interni 
+Casistica 
+	Step di processo 
+	App 
+	Capitolo
+	Aggiornamento  e  
+visualizzazione  listini forzati
+	1. Inserimento prezzo forzato 
+	Programma forzature  prezzo
+	4.18
+	Scarico uso  
+interno 
+	1. Registrazione scarico ad uso interno 
+	Registra movimento  merci 
+	4.24
+	Ritiro dotazioni  aziendali
+	1. Creazione ordine di trasferimento verso Piattaforma 
+	Crea ordine d'acquisto 
+	4.12
+	2. Creazione consegna in uscita 
+	I miei ordini d'acquisto 
+	4.13
+	3. Registrazione uscita merci 
+	Gestisci consegne in  uscita 
+	4.10
+	Trasferimenti  da PDV a  
+CRR/Reverse
+	1. Creazione ordine di trasferimento verso CRR/Reverse 
+	Crea ordine d'acquisto 
+	4.12
+	2. Creazione consegna in uscita 
+	I miei ordini d'acquisto 
+	4.13
+	3. Aggiornamento dati da inserire nel DDT 
+	I miei ordini d'acquisto 
+	4.13
+	4. Registrazione uscita merci 
+	I miei ordini d'acquisto 
+	4.13
+	5. Recupero stampa del DDT 
+	Visualizza consegna in  uscita 
+	7.6
+	
+
+
+
+Navigatore – Processi Attivi
+Casistica 
+	Step di processo 
+	App 
+	Capitolo
+	Sostituzione  per Servizio  
+Rilassati
+	1. Scarico del nuovo prodotto con tipo movimento ad hoc (ex  causale Strike 233) 
+	Crea correzione stock 
+	4.20
+	2. Ricarico del vecchio prodotto con tipo movimento ad hoc  (ex causale Strike 133) 
+	Crea correzione stock 
+	4.20
+	Vendite Tim &  Vodafone 
+	1. Creazione ordine di vendita 
+	Crea ordini di vendita 
+	4.8
+	Vendite Tim &  Vodafone - 
+Storno
+	1. Storno dell'uscita merce 
+	Storna UM – consegna in  uscita 
+	4.27
+	2. Storno della consegna in uscita 
+	Modifica consegna in  uscita 
+	4.9
+	3. Cancellazione ordine di vendita 
+	Modifica ordini di vendita 
+	4.22
+	Vendita NATO
+	1. Creazione ordine di vendita 
+	Crea ordini di vendita 
+	4.8
+	2. Rimozione blocco alla consegna 
+	Modifica ordini di vendita 
+	4.22
+	3. Registrazione uscita merci
+	Crea consegna in uscita  – con riferimento a  
+ordine
+	4.7
+	4. Recupero della stampa del DDT 
+	Visualizza consegna in  uscita 
+	7.6
+	Vendita PA
+	1. Creazione ordine di vendita 
+	Crea ordini di vendita 
+	4.8
+	2. Registrazione uscita merci 
+	Gestisci consegne in  uscita 
+	4.10
+	3. Recupero della stampa del DDT 
+	Visualizza consegna in  uscita 
+	7.6
+	Vendita Affiliati (da Agente) - 
+PDV accetta
+	1. Creazione consegna in uscita
+	Crea consegna in uscita  – con riferimento a  
+ordine
+	4.7
+	2. Registrazione uscita merci 
+	Gestisci consegne in  uscita 
+	4.10
+	
+
+
+
+8 
+  
+
+Vendita Affiliati 
+(da Agente) - PDV rifiuta 
+1. Inserimento causale di rifiuto Modifica ordini di vendita 4.22 
+
+
+Vendita B2B 
+	1. Registrazione uscita merci 
+	Gestisci consegne in  uscita 
+	4.10
+	Vendita a  
+Fornitore - 
+ordine con  
+quantità fissa
+	1. Registrazione uscita merci 
+	Gestisci consegne in  uscita 
+	4.10
+	Processo  
+Sodastream 
+	1. Invio bombole vuote a fornitore
+	Crea consegna in uscita  – senza riferimento a  ordine
+	4.25
+	
+
+
+
+Navigatore – Reportistica 
+Casistica 
+	App 
+	Capitolo
+	Visualizzazione stock articolo presso singolo negozio con relativi costi e  prezzi 
+	Reportistica Materiali 
+	7.1
+	Visualizzazione stock articolo presso Rete e Piattaforme 
+	Visualizza riepilogo stock 
+	7.3
+	Visualizzazione stock articolo in Utilizzo libero 
+	Visualizza stock magazzino per  materiale 
+	7.12
+	Visualizzazione anagrafica articolo 
+	Visualizzare articolo 
+	7.2
+	Visualizzazione composizione kit 
+	Distinta base multilivello 
+	7.14
+	Visualizzazione anagrafica clienti e partner 
+	Visualizzazione anagrafiche clienti  e partner
+	7.11
+	Monitoraggio delle quantità vendute di un prodotto in un determinato  periodo 
+	Report di Sellout 
+	7.4
+	Visualizzazione degli ordini di vendita / reso cliente e fornitore e i  trasferimenti merce interni 
+	Report vendite 
+	7.5
+	Visualizzazione dei dati relativi ad una consegna in uscita 
+	Visualizza consegna in uscita 
+	7.6
+	Visualizzazione dei dati relativi ad una consegna in entrata 
+	Visualizza consegna in entrata 
+	7.15
+	Visualizzazione degli ordini d'acquisto fornitore e ordini di trasferimento  tra Piattaforme e negozi 
+	Visualizza ordine d’acquisto 
+	7.7
+	Visualizzazione ordini di vendita e resi 
+	Visualizza ordini di vendita 
+	7.8
+	Visualizzazione movimentazioni per articolo 
+	Visualizza lista documenti  
+materiale 
+	7.9
+	Stampa dell'ordine di trasferimento appena creato 
+	Visualizza documenti d’acquisto  per materiale 
+	7.10
+	Visualizzazione della merce in transito: spedita, ma non ancora ricevuta 
+	Visualizza stock in transito 
+	7.13
+	
+
+
+
+9 
+  
+
+1. Introduzione 
+Questo manuale ha l’obiettivo di illustrare l’utilizzo delle app SAP nei punti vendita, fornendo  istruzioni chiare e schermate di riferimento. 
+Le schermate presentate hanno finalità dimostrative e possono essere soggette ad aggiornamenti. La  versione definitiva può quindi differire da quella riportata. 
+1.1 Cos’è SAP? 
+SAP è il nuovo gestionale che sostituirà Strike. Si tratta di un ERP (Enterprise Resource Planning), un  sistema che integra e gestisce in modo centralizzato i principali processi aziendali. 
+SAP conta oltre 111.000 dipendenti e supporta più di 13.000 aziende retail in 121 Paesi. I principali vantaggi di SAP sono: 
+• Precisione: i dati sono più affidabili e sempre aggiornati; 
+• Migliore livello di servizio: consente di assistere meglio i clienti in negozio; 
+• Progressiva automazione: riduce le attività manuali e velocizza i processi; 
+• Rapidità: rende più veloce la ricerca e la gestione delle informazioni. 
+Rispetto a Strike, SAP introduce alcuni cambiamenti chiave: 
+• Magazzini logici (capitolo 1.2); 
+• Oggetti SAP (capitolo 1.3); 
+• Modifiche nel processo di assistenze/riparazioni (capitolo 1.4).
+10 
+  
+
+1.2 Magazzini logici 
+In SAP i depositi Strike diventano magazzini logici. Questa distinzione permette di separare le  merci vendibili da quelle destinate ad altre attività (ad es. merce danneggiata, da ispezionare, di  proprietà cliente, ecc.). Il numero di magazzini è stato aumentato per gestire meglio le diverse  tipologie di merce. 
+La tabella seguente mostra l’associazione tra depositi Strike e magazzini logici SAP: 
+Dep Strike 
+	Mag Logico SAP 
+	Nome 
+	Descrizione
+	Deposito 1
+	M001 
+	Generale 
+	Magazzino principale del negozio; stock  vendibile
+	M052 
+	Presso Hub
+	Prodotti non ancora in negozio, in attesa di  arrivo (es. reso “ipotenusa” con difetto  funzionale)
+	M053 
+	Da Ispezionare 
+	Merce in attesa di controllo qualità
+	M054 
+	Omn. - web 
+	Merce riservata a vendite web (C&C)  durante la prenotazione
+	M055 
+	Preno Offline 
+	Merce riservata per prenotazioni Visual  durante la prenotazione
+	M056 
+	Ricondizionati 
+	Merce non perfetta ma vendibile  (ricondizionata)
+	M057 
+	Lunga degenza 
+	Articoli in giacenza prolungata o casi  speciali (es. alluvione, sequestro, ecc.)
+	M058 
+	Conto deposito 
+	Articoli Unieuro temporaneamente fuori  store (es. campagne pubblicitarie)
+	Deposito 3 
+	M051 
+	Danneg. Negozio 
+	Articoli di proprietà Unieuro in riparazione
+	N/A 
+	M014 
+	Buy&Sell 
+	Articoli “Buy & Sell”
+	Deposito 4 
+	M050 
+	Danneg. Cliente 
+	Articoli di proprietà cliente in riparazione  (es. scheda cliente)
+	
+
+
+
+I magazzini logici verranno approfonditi nel capitolo 7 Magazzini logici – Dettaglio.
+11 
+  
+
+1.3 Oggetti SAP 
+In SAP l’operatività di negozio (vendita, reso, consegna) viene registrata attraverso documenti digitali.  Questi documenti corrispondono alle attività reali e raccolgono in modo ordinato i dati collegati a  quella attività. 
+Ad esempio, nel caso di una vendita a cliente, SAP genera in sequenza i seguenti documenti: • Ordine di vendita; 
+• Consegna in uscita; 
+• Uscita merci; 
+• Fattura. 
+In questo modo SAP tiene una traccia digitale completa di tutte le attività, dall’ordine iniziale  all’emissione della fattura. 
+Caratteristiche comuni degli oggetti SAP: 
+• Dipendenza tra documenti: Ogni documento dipende dal precedente. Se un documento  viene modificato, i successivi già creati devono essere stornati/cancellati; 
+• Documento materiale: Ogni movimentazione di merce genera un documento materiale  (entrata merci, uscita merci, movimentazione tra magazzini, rettifica inventariale, cambio  codice, scarico per consumi); 
+• Modifica o visualizza: Ogni documento SAP può essere consultato in visualizzazione. Alcuni  documenti possono anche essere modificati, ma solo se non ci sono documenti successivi  già creati. Questo garantisce operazioni sicure e senza errori. 
+Elenco dei principali oggetti SAP: 
+• Ordine di acquisto 
+• Ordine di vendita 
+• Ordine di reso 
+o Ordine di reso a cliente 
+o Ordine di reso a fornitore 
+• Ordine di trasferimento 
+• Consegna in entrata 
+• Documento materiale
+12 
+  
+
+• Consegna in uscita 
+Il dettaglio degli oggetti SAP viene trattato nel capitolo 2.2 Oggetti SAP - Dettaglio. 1.4 Processo di assistenze/riparazioni 
+I processi di gestione delle assistenze hanno subito diverse modifiche dovute alle logiche su cui si  basa SAP, di seguito viene riportata l’operatività che il personale di negozio dovrà seguire. 1.4.1 Assistenze clienti con invio al CAT 
+1. Richiesta di assistenza 
+• ARRIVO CLIENTE: Il cliente arriva in negozio per chiedere un’assistenza/riparazione di un  prodotto; 
+• CREAZIONE SCHEDA: 
+a. Il punto vendita crea la scheda di riparazione tramite l’app After Sales Cockpit 
+(capitolo 4.1) e prende in carico il prodotto; in caso di acquisto sul sito web, il  
+personale di negozio deve richiedere la creazione di un’RMA SF di riparazione  
+sempre all’interno della medesima app. 
+b. Dopo aver compilato e salvato la scheda con i dati del cliente, si seleziona Stampa  scheda e il sistema genera un PDF pronto per la stampa; 
+• STAMPA E FIRMA SCHEDA: Stampa del PDF e firma della scheda di riparazione da parte  del cliente; 
+• CREAZIONE DOCUMENTI SUCCESSIVI: Il sistema genera automaticamente la consegna  in entrata ed effettua l’entrata merci del prodotto cliente nel magazzino “Danneggiati  cliente” (M050). Il flusso documentale può essere monitorato tramite l’app Monitora rimborsi cliente (capitolo 4.2);  
+2. Invio prodotto al CAT 
+• CREAZIONE DOCUMENTAZIONE DI USCITA: quando si intende procedere con la  spedizione del prodotto al CAT, il punto vendita crea la consegna in uscita e registra  l’uscita merci tramite l’app Monitor lavorazione esterna (capitolo 4.4); 
+• USCITA FISICA DEI PRODOTTI DA STORE: Il prodotto viene inviato al CAT per la  riparazione;
+13 
+  
+
+• INTEGRAZIONE INFORMAZIONI: Gli aggiornamenti ricevuti dal CAT (ad es. preventivo,  riparazione fuori garanzia, riparazione in garanzia) sono registrati nell’app Report  
+riparazioni (capitolo 4.5); 
+3. Ricezione prodotto dal CAT 
+• RICEZIONE PRODOTTO: Il punto vendita riceve il prodotto dal CAT e procede con la  creazione della consegna in entrata e la registrazione dell’entrata merci tramite l’app Cruscotto entrate merci (capitolo 4.6); 
+• CONTATTO CLIENTE: il personale di negozio può quindi procedere a contattare il cliente  per avvisarlo che il prodotto è pronto al ritiro; 
+4. Restituzione del prodotto al cliente e chiusura scheda 
+• RESTITUZIONE PRODOTTO: per poter riconsegnare il prodotto al cliente, il personale di  store procede a creare la consegna in uscita e registra l’uscita merci tramite l’app  Monitora rimborsi cliente (capitolo 4.2); 
+• CHIUSURA SCHEDA: La scheda di riparazione viene chiusa e il dettaglio di chiusura viene inserito nell’app Monitora rimborsi cliente (capitolo 4.2); 
+• STAMPA E FIRMA SCHEDA: La scheda di chiusura viene stampata tramite l’app Monitora  rimborsi cliente (capitolo 4.2) e firmata dal cliente. 
+Casistica particolare: 
+1. CAT non noto al momento della creazione della scheda: durante la creazione della  scheda all’interno dell’app After Sales Cockpit (capitolo 4.1), compilare il campo: 
+1. Causale Scheda: Scheda cliente per riparazione presso CAT (CAT non noto) 
+▪ Se non noto non è necessario inserire il Codice CAT; 
+▪ Alla stampa della scheda, tuttavia, il sistema riporta comunque un codice  
+CAT fittizio, che risulta valorizzato anche se non è stato inserito  
+manualmente. 
+2. Una volta che il CAT è noto, l’operatore può accedere all’app Acquisisci risultati  del controllo (capitolo 4.3) dove è possibile inserire il codice CAT.
+14 
+  
+
+1.4.2 Riparazioni Unieuro con invio al CAT 
+1. Schedatura prodotto: 
+• SEGREGAZIONE PRODOTTO: spostamento del prodotto danneggiato nel magazzino  dedicato Danneggiati Negozio (M051) con l’app Crea Trasferimento Stock (capitolo 4.11) 
+• STAMPA SCHEDA: Generazione automatica della scheda a valle dello spostamento del  prodotto nell’app Crea Trasferimento Stock (capitolo 4.11), stampa del PDF e  
+applicazione sul prodotto;  
+• CREAZIONE ORDINE DI ACQUISTO: Il punto vendita crea l’ordine di riparazione al CAT tramite l’app Crea Ordine d’acquisto (capitolo 4.12). 
+2. Invio prodotto al CAT 
+• CREAZIONE DOCUMENTAZIONE DI USCITA: quando si intende procedere con la  spedizione del prodotto al CAT, il punto vendita crea la consegna in uscita e registra  l’uscita merci tramite l’app Monitor lavorazione esterna (capitolo 4.4); 
+• USCITA FISICA DEI PRODOTTI DA STORE: Il prodotto viene inviato al CAT per la  riparazione; 
+• INTEGRAZIONE INFORMAZIONI: Gli aggiornamenti ricevuti dal CAT (ad es. preventivo,  riparazione fuori garanzia, riparazione in garanzia) sono registrati nell’app Report  riparazioni (capitolo 4.5); 
+3. Ricezione prodotto dal CAT e chiusura scheda 
+• RICEZIONE PRODOTTO: Il punto vendita riceve il prodotto dal CAT e procede con la  creazione della consegna in entrata e la registrazione dell’entrata merci tramite l’app Cruscotto entrate merci (capitolo 4.6); 
+• CHIUSURA SCHEDA: inserimento del dettaglio di chiusura della riparazione attraverso il  report riparazioni (capitolo 4.5) 
+• SPOSTAMENTO IN ALTRO MAGAZZINO: se la riparazione è avvenuta con successo,  spostamento del prodotto rientrato dal CAT nel magazzino desiderato con l’app Crea  Trasferimento Stock (capitolo 4.11) 
+15 
+
+2.Glossario SAP 
+Questo capitolo descrive il glossario SAP ed è diviso nei seguenti sottocapitoli: 
+• Sezioni di un documento (capitolo 2.1); 
+• Oggetti SAP – Dettaglio (capitolo 2.2); 
+• Descrizione simboli e messaggi (capitolo 2.3). 
+2.1 Sezioni di un documento 
+In SAP ogni documento è composto da tre sezioni principali: 
+• Testata; 
+• Posizione; 
+• Dettaglio di posizione. 
+Per l’ordine di acquisto sono le seguenti:
+16 
+
+Sezioni 
+	Descrizione
+	Testata 
+	Contiene le informazioni generali del documento (tipo, fornitore, ecc.) che valgono per tutte le righe
+	Posizione 
+	È un elemento dell’ordine che contiene le informazioni dettagliate su un  singolo materiale o servizio da acquistare, come numero di posizione,  codice materiale, descrizione, quantità, prezzo unitario, divisione e  magazzino di destinazione, ecc
+	Dettaglio di posizione 
+	Mostra informazioni aggiuntive su una posizione. Contiene diversi tab,  come «Sviluppo ordine di acquisto», dove sono visibili i documenti  successivi (entrata merci, entrata fattura)
+	
+
+
+
+ 
+Per l’ordine di vendita i campi di testata e di posizione sono uguali a quelli dell’ordine di acquisto. Il  dettaglio di posizione non è visibile direttamente nella schermata principale, ma si apre solo con  doppio clic sulla posizione desiderata.
+Sezioni 
+	Descrizione
+	Dettaglio di posizione 
+	Contiene informazioni specifiche della posizione come ad esempio le  condizioni prezzo e lo stato della singola posizione
+	
+
+
+
+17 
+
+2.2 Oggetti SAP – Dettaglio 
+2.2.1 Oggetti standard SAP 
+Di seguito viene riportata la lista degli oggetti SAP introdotti nel capitolo 1.3 Oggetti SAP: • Ordine di acquisto 
+• Ordine di vendita 
+• Ordine di reso 
+o Ordine di reso a cliente 
+o Ordine di reso a fornitore 
+• Ordine di trasferimento  
+• Consegna in entrata 
+• Documento materiale 
+• Consegna in uscita 
+Di seguito viene riportato il dettaglio dei flussi:
+18 
+
+ORDINE DI ACQUISTO E DOCUMENTI SUCCESSIVI 
+
+ORDINE DI VENDITA E DOCUMENTI SUCCESSIVI 
+
+ORDINE DI RESO CLIENTE E DOCUMENTI SUCCESSIVI
+
+19 
+
+ORDINE DI RESO A FORNITORE E DOCUMENTI SUCCESSIVI 
+
+ORDINE DI TRASFERIMENTO E DOCUMENTI SUCCESSIVI 
+
+2.2.2 Altri oggetti 
+POST-IT ELETTRONICO 
+Il Post-it elettronico è un documento interno usato dal punto vendita per i prodotti trasferiti in  magazzini logici diversi dal principale (M001 Generale). Serve a facilitare la comunicazione tra  operatori, rendendo chiare le note inserite da chi effettua lo spostamento anche per chi gestirà il  prodotto in seguito.
+20 
+
+2.3 Descrizione simboli e messaggi 
+In SAP alcuni simboli indicano lo stato di un ordine: 
+Simbolo 
+	Stato di elaborazione 
+	Immagine
+	Quadrato verde 
+	Processo concluso
+	
+	Triangolo giallo 
+	Processo incompleto
+	
+	Rombo blu 
+	Documento non ancora creato
+	
+	Cerchio rosso 
+	Processo errato
+	
+	
+
+
+
+Sono inoltre presente anche due messaggi di errore:
+Messaggio d’errore 
+	Significato 
+	Immagine
+	Cerchio rosso 
+	Alert bloccante che impedisce il  proseguimento dell’operazione
+	
+	Triangolo giallo 
+	Alert non bloccante che non  
+interrompe il flusso di lavoro
+	
+	
+
+
+
+21 
+
+3.Accedere a sistema 
+Primo accesso a sistema 
+Per accedere a SAP, è necessario utilizzare le seguenti credenziali: 
+o Il nome utente corrisponde al codice operatore numerico utilizzato su Strike; 
+o La password viene inviata all’indirizzo e-mail associato all’account sotto forma di  password provvisoria, da usare per il primo accesso; 
+NB: Al primo accesso su SAP è necessario il cambio ad una nuova password. 
+Procedure per il recupero utenza/password dimenticata 
+Le procedure per il recupero dell’utenza o della password dimenticata restano invariate rispetto a  quelle già usate in Strike. L’operatore apre un ticket ITYOU sia per SAP che per Strike. 
+3.1 Accesso a sistema – Logon 
+Per accedere a SAP Fiori inserire nome utente e password. Di seguito la schermata di accesso.
+22 
+
+
+23
+
+
+24
+
+3.2 Schermata iniziale – Launchpad 
+A seguito del Log On si accede alla Schermata iniziale – Launchpad.
+25 
+
+4.Applicazioni  
+Questo capitolo tratta le app per resi, assistenze e riparazioni (clienti e proprietà Unieuro). Qui sono  illustrate le funzionalità principali, le modalità d’uso e i passaggi operativi per la gestione di resi  cliente e riparazioni. Sono descritte, ad esempio, le app per creare ordini di reso, gestire le consegne  in entrata e registrare le entrate merci. 
+4.1 After Sales Cockpit  
+L’app After Sales Cockpit viene utilizzata per la creazione di: 
+• Ordini di reso cliente web (sia con rimborso che con voucher) 
+• Riparazioni/assistenze di merce cliente.  
+Di seguito il box identificativo dell'app: 
+
+Dopo aver selezionato il box e avviato l’app, si apre la schermata iniziale. 
+In questa schermata selezionare una delle tre opzioni disponibili, in base all’operazione da effettuare: • Resi web: resi su vendite effettuate tramite Unieuro.com 
+• Scheda cliente con riferimento: Si riferisce al caso in cui il cliente ha un documento  d’acquisto (es. scontrino) con movimento presente nel sistema; 
+• Scheda cliente senza riferimento: Si riferisce al caso in cui il cliente ha un documento  d’acquisto con movimento NON presente nel sistema (ES. Unieuro retail GDO, vendita da  affiliato). 
+26 
+
+4.1.1 Resi web  
+1. Selezionare l’opzione Resi web; 
+2. Inserire il numero dell’ordine Hybris fornito dal cliente; 
+3. Selezionare Esegui per visualizzare una riga contenente tutti i dati relativi all’ordine di  vendita Hybris; 
+4. Selezionare il radio button corrispondente alla riga oggetto del reso; 
+5. Selezionare tab Chiedi RMA per proseguire con la richiesta.
+27 
+
+6. Selezionare uno dei due campi mostrati dal sistema a seconda di come si intende gestire il  cliente: 
+• Reso con rimborso; 
+• Reso con voucher. 
+Se sono trascorsi più di 30 giorni dalla vendita, il sistema restituisce un alert, ma anche con  questo alert presente, il punto vendita può procedere con il ritiro della merce. 
+Nei capitoli sottostanti viene spiegato come gestire le due diverse casistiche. 
+4.1.1.1 Reso con rimborso 
+Una volta selezionato il campo Reso con rimborso, proseguire come indicato di seguito:  
+1. Selezionare il tab Riaggiorna per visualizzare il numero dell’ordine di reso. 
+NB: Il sistema non permette di rendere due righe contemporaneamente
+28 
+
+2. Selezionare Stampa volontà cliente per procedere alla stampa (in duplica copia) da  consegnare al cliente e da archiviare: 
+
+
+3. Selezionando post-it elettronico si visualizza il documento da stampare e applicare sul  prodotto ricevuto dal cliente 
+
+
+Qui termina l’operatività prevista dal personale di store su questa app per i resi cliente con rimborso. NB: Dopo aver creato l’ordine di reso, il sistema in automatico: 
+• Carica il prodotto nel magazzino Da Ispezionare - M053; 
+• Crea tutti i documenti successivi fino all’accredito; 
+o Tramite l’app Monitora rimborsi cliente (capitolo 4.2) entrando con il numero di  ordine di reso (creato da questa schermata nel campo Ordine di reso) è possibile  
+visualizzare i documenti successivi alla creazione dell’ordine di reso. 
+29 
+
+STEP E APPLICAZIONI SUCCESSIVE 
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo. 
+PROCESSO 
+	STEP SUCCESSIVO 
+	APP 
+	CAPITOLO
+	Reso con rimborso cliente  WEB
+	Spostamento della merce  in magazzino dedicato 
+	Crea trasferimento stock 
+	4.11
+	
+
+
+
+4.1.1.2 Reso con voucher 
+Una volta selezionato il campo Reso con voucher:  
+1. Selezionare Riaggiorna per visualizzare il numero dell’ordine di reso; 
+
+2. Selezionare Genera voucher per visualizzare il voucher da consegnare al cliente; 
+3. Per stampare il Voucher cliccare sull’icona della stampante e in seguito selezionare la  stampante.
+
+30 
+
+4. Selezionare Stampa volontà cliente per procedere alla stampa (in duplica copia) da  consegnare al cliente e da archiviare. 
+
+5. Selezionando post-it elettronico si visualizza il documento da stampare e applicare sul  prodotto ricevuto dal cliente 
+
+
+Qui termina l’operatività prevista dal personale di store su questa app per i resi cliente con rimborso. NB: Dopo aver creato l’ordine di reso, il sistema in automatico: 
+• Carica il prodotto nel magazzino Da Ispezionare - M053; 
+• Crea tutti i documenti successivi fino all’accredito; 
+o Tramite l’app Monitora rimborsi cliente entrando con il numero di ordine di reso (creato da questa schermata nel campo Ordine di reso) è possibile visualizzare i  
+documenti successivi alla creazione dell’ordine di reso. 
+31 
+
+STEP E APPLICAZIONI SUCCESSIVE 
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo.
+PROCESSO 
+	STEP SUCCESSIVO 
+	APP 
+	CAPITOLO
+	Reso con rimborso cliente  WEB
+	Spostamento della merce  in magazzino dedicato
+	Crea trasferimento stock 
+	4.11
+	
+
+
+
+32 
+
+4.1.2 Scheda cliente con riferimento 
+1. Selezionare l’opzione Scheda cliente con riferimento 
+2. Inserire il riferimento della vendita: 
+a. Se il cliente ha acquistato in negozio, inserire il numero dello scontrino nel campo  dedicato oppure scansionare il codice a barre dello scontrino, come mostrato  
+nell’esempio in basso; 
+b. Se invece il cliente ha acquistato sul sito, inserire il numero dell’ordine Hybris nel  campo dedicato. 
+3. Selezionare Esegui per visualizzare una riga contenente tutti i dati relativi allo scontrino. 4. Selezionare il radio button corrispondente alla riga oggetto dell’assistenza; 
+NB: In caso di ordini multiriga o a quantità multipla dello stesso articolo, il sistema crea la  scheda per singolo prodotto. 
+5. Selezionare il tab Crea Scheda per proseguire con la richiesta. 
+
+6. Compilare i campi obbligatori (contraddistinti da un asterisco rosso “*”) presenti nella  seguente schermata. 
+NB: Il campo materiale viene compilato in automatico.
+
+33 
+
+Di seguito gli inserimenti possibili per le causali scheda: 
+
+Di seguito gli inserimenti possibili per le condizioni estetiche (questo campo è anche corredato di un  campo note dove è possibile inserire informazioni utili alla presa in carico del prodotto): 
+
+Di seguito gli inserimenti possibili per gli accessori a corredo(questo campo è anche corredato di un  campo note dove è possibile inserire informazioni utili alla presa in carico del prodotto): 
+
+Di seguito gli inserimenti possibili per i tipi garanzia:
+
+34 
+
+7. Una volta compilati tutti i campi selezionare Creare e nella parte sottostante appare il codice  della scheda cliente.  
+8. Selezionare 
+9. Stampa scheda per visualizzare la stampa. 
+
+STEP E APPLICAZIONI SUCCESSIVE
+35 
+
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo. 
+PROCESSO STEP SUCCESSIVO APP CAPITOLO 
+Assistenza cliente con invio al CAT
+	Visualizzazione scheda 
+	Monitora rimborsi cliente 
+	4.2
+	Inserimento codice CAT se  non noto in precedenza
+	Acquisisci risultati del  controllo 
+	4.3
+	Invio del prodotto al CAT - consegna in uscita ed  uscita merci
+	Monitor lavorazione  
+esterna
+	4.4
+	Assistenza cliente con  riparazione in PDV
+	Visualizzazione scheda 
+	Monitora rimborsi cliente 
+	4.2
+	Aggiornamento scheda con avanzamenti 
+	Report riparazioni 
+	4.5
+	Assistenza cliente con  riparazione a domicilio
+	Aggiornamento tabella  monitoraggio stati e  
+inserimento dettaglio  chiusura
+	Report riparazioni 
+	4.5
+	
+
+
+
+4.1.3 Scheda cliente senza riferimento  
+1. Selezionare l’opzione Scheda cliente senza riferimento:
+36 
+
+2. Compilare i campi obbligatori (contraddistinti da un asterisco rosso “*”) nella seguente  schermata; 
+
+Il campo materiale è un campo obbligatorio da compilare, nel quale è necessario inserire il codice  materiale per la quale si vuole effettuare una riparazione/assistenza.  
+Di seguito gli inserimenti possibili per le causali scheda: 
+
+Di seguito gli inserimenti possibili per le condizioni estetiche (questo campo è anche corredato di un  campo note dove è possibile inserire informazioni utili alla presa in carico del prodotto):
+
+37 
+
+Di seguito gli inserimenti possibili per gli accessori a corredo (questo campo è anche corredato di un  campo note dove è possibile inserire informazioni utili alla presa in carico del prodotto): 
+
+Di seguito gli inserimenti possibili per i tipi garanzia: 
+
+3. Una volta compilati tutti i campi selezionare Creare e nella parte sottostante appare il codice  della scheda cliente; 
+4. Selezionare Stampa scheda per visualizzare la stampa. 
+6000001031
+
+38 
+
+STEP E APPLICAZIONI SUCCESSIVE 
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo. 
+PROCESSO STEP SUCCESSIVO APP CAPITOLO
+Assistenza cliente con invio al CAT
+	Visualizzazione scheda 
+	Monitora rimborsi cliente 
+	4.2
+	Inserimento codice CAT se  non noto in precedenza
+	Acquisisci risultati del  controllo 
+	4.3
+	Invio del prodotto al CAT - consegna in uscita ed  uscita merci
+	Monitor lavorazione  
+esterna
+	4.4
+	Assistenza cliente con  riparazione in PDV
+	Visualizzazione scheda 
+	Monitora rimborsi cliente 
+	4.2
+	Aggiornamento scheda con avanzamenti 
+	Report riparazioni 
+	4.5
+	Assistenza cliente con  riparazione a domicilio
+	Aggiornamento tabella  monitoraggio stati e  
+inserimento dettaglio  chiusura
+	Report riparazioni 
+	4.5
+	
+
+
+
+39 
+
+4.2 Monitora rimborsi cliente 
+L’app Monitora rimborsi cliente consente di: 
+• Monitorare lo stato di avanzamento dei i resi web effettuati dai clienti e delle  riparazioni/assistenze relative alla merce di proprietà del cliente 
+• Registrare l’uscita merci verso il cliente per le riparazioni/assistenze cliente 
+• Chiudere la scheda riparazione per le riparazioni/assistenze cliente 
+Di seguito il box identificativo dell'app: 
+
+Dopo aver selezionato il box e avviato l’app, si apre la schermata iniziale. 
+
+NB: In questo esempio, la lista testata e le posizioni sono state nascoste per una visualizzazione più  pulita.
+40 
+
+Per la ricerca puntuale di un determinato ordine di reso o di assistenza, è necessario compilare uno  dei due seguenti i campi: 
+• Ordine di reso 
+• Numero RMA cliente 
+• Tipo di ordine di reso: codice tipo ordine (ZAR7) 
+Se invece si desidera fare una ricerca generica, è possibile inserire questi campi di input per la ricerca  in testata: 
+• Ordine di reso: numero univoco SAP; 
+• Data creazione: data di creazione del reso in SAP; 
+• Creato da: nome dell’utenza che ha creato l’ordine; 
+• Cliente: codice identificativo del cliente; 
+• Tipo di ordine di reso: codice tipo ordine; 
+• Organizzazione commerciale: in Unieuro l’organizzazione commerciale utilizzata è la U001  Unieuro S.p.A.;  
+• Canale distribuzione: canale di vendita su cui è registrato quell’ordine; 
+• Settore merceologico: Possibilità di raggruppamento di materiali, prodotti o servizi. In base al  settore merceologico, il sistema determina le aree vendite e i settori contabili a cui è  assegnato un materiale, un prodotto o un servizio; 
+• Gr.add.vendite: gruppo di addetti alle vendite responsabili della gestione delle vendite di  determinati prodotti e servizi; 
+• Uff. vendite: Unità (ad esempio a livello regionale) che è responsabile della vendita di certi  prodotti o servizi all'interno di una determinata area geografica. 
+Descrizione dei possibili campi di input per la ricerca in posizione: 
+• Materiale: Chiave alfanumerica che identifica in maniera univoca il materiale; 
+• Divisione: riferimento del punto vendita; 
+• Posizione dell’ordine di reso: Numero che identifica in maniera univoca la posizione nel  documento di reso; 
+• Numero RMA cliente: indica il numero dell’autorizzazione resi; 
+• Doc. di riferimento 
+• Pos. Riferimento 
+Una volta inseriti i parametri di ricerca per il proprio obiettivo, selezionare Eseguire.
+41 
+
+4.2.1 Reso cliente web 
+Dopo aver inserito il numero dell’ordine di reso e selezionato Eseguire, viene mostrata una  schermata che consente di visualizzare l’intero flusso dell’ordine e il relativo stato di elaborazione.  
+Nell’esempio riportato sotto, il quadratino verde indica che il flusso dell’ordine è in stato completo. A  seconda della storia del documento saranno visualizzati flussi diversi dell’ordine. 
+
+Facendo doppio clic su un singolo documento è possibile visualizzarne direttamente il contenuto. Ad  esempio, se si desidera visualizzare la consegna, fare doppio clic sulla consegna stessa; si viene  reindirizzati alla schermata sottostante.
+
+42 
+
+4.2.2 Assistenza/riparazione cliente offline 
+4.2.2.1 Monitoraggio stato avanzamento riparazione 
+Nel caso di un assistenza/riparazione cliente, si visualizza la seguente schermata: 
+
+In questa schermata è possibile visualizzare il flusso di documenti creati in automatico da SAP dopo  la creazione della scheda, in particolare: 
+• Ordine di reso: è il numero della scheda cliente appena creata 
+• Ispezione: l’ispezione che SAP ha effettuato in automatico per poter creare i successivi 2  documenti visibili in basso: 
+o Ordine di riparazione esterno: utilizzato per la restituzione del prodotto riparato al  cliente; 
+o Ordine d’acquisto per riparazione esterna: necessario per l’invio del prodotto al  fornitore/CAT. 
+o N.B. Nel caso in cui non sia stato inserito il codice CAT in fase di apertura scheda, è  possibile fare doppio click sul documento di Ispezione e automaticamente il sistema  reindirizza all’app Acquisisci risultati del controllo (capitolo 4.3), in cui sarà possibile  inserirlo. 
+• Consegna resi: la consegna in entrata generata automaticamente da SAP 
+• Entrata merci: l’entrata merci del pezzo da riparare che SAP ha registrato in automatico, caricando il pezzo sul magazzino logico Danneggiati cliente (M050).
+43 
+
+4.2.2.2 Uscita merci verso cliente e chiusura scheda 
+1. Per la riconsegna del prodotto al cliente è necessario fare doppio clic sul numero documento  relativo all’Ordine di riparazione esterno (terzultima riga della schermata): 
+
+2. A seguito del doppio clic, appare la seguente schermata di dettaglio, cliccare Modifica per poter editare il documento 
+3. Cliccare sul Tab Altro.
+44 
+
+4. Nel menu a tendina che appare, selezionare Documento di vendita e poi Consegna, come si  vede nella schermata in basso: 
+
+5. Nella schermata che appare, selezionare il magazzino M050 
+6. Cliccare su Registra uscita merci 
+Al salvataggio, il sistema restituisce il numero della consegna in uscita appena creata.
+
+45 
+
+7. Per chiudere la scheda e inserire il dettaglio di chiusura della riparazione, tornare nell’app e  fare doppio clic sul numero documento relativo all’Ordine di reso (prima riga della  schermata): 
+
+8. Nella schermata seguente, andare su Modifica, poi doppio clic sul Materiale della posizione.
+46 
+
+9. Sulla schermata spostarsi a destra sui Tab fino al raggiungimento del Tab Dati supplementari  B. 
+
+10. A questo punto, scorrere in basso fino al raggiungimento del box causale di chiusura, dal  quale è possibile selezionare uno dei valori del menu a tendina. 
+
+11. Dopo aver inserito la casuale di chiusura, selezionare Salva. 
+47 
+
+In automatico in sistema genera il seguente documento: 
+
+La scheda è stata chiusa, e sul Report riparazioni (capitolo 4.5) è ora possibile entrare e vedere un  nuovo aggiornamento automatico SAP che riporta la causale di chiusura.
+48 
+
+4.3 Acquisisci risultati del controllo 
+L’app Acquisisci risultati del controllo consente di registrare l’esito dell’ispezione sui prodotti da  riparare per le schede di riparazione cliente e di inserire il codice CAT, se non noto al momento della  creazione della scheda. 
+Di seguito il box identificativo dell'app: 
+
+1. Nella schermata iniziale inserire il numero della scheda nel campo ordine di reso; 2. Selezionare Esegui (icona con orologio).
+49 
+
+Nella schermata successiva: 
+3. Espandere la sezione con la freccia accanto alla cartella 
+4. Selezionare la posizione 10. 
+Il sistema apre automaticamente il tab Posizione.
+50 
+
+Nel tab Posizione compilare i seguenti campi obbligatori (è possibile visualizzare i campi obbligatori  cliccando su invio e il sistema in automatico mostra un cerchio rosso di fianco ai campi da  compilare): 
+Nella sezione Risultato ispezione, compilare: 
+
+5. Codice ispezione: cliccando sul matchcode del campo, viene visualizzata la seguente  schermata nella quale è possibile inserire l’esito dell’ispezione; 
+
+• Ispezione OK: la verifica conferma quanto dichiarato dal cliente; 
+• Ispezione KO: la verifica non conferma quanto dichiarato dal cliente oppure non ci  sono le competenze per riparare il prodotto; 
+• Ispezione ON HOLD: usata principalmente dal CRR; 
+6. Commento: inserire “.” se non ci sono commenti; 
+Nella sezione Attività successiva logistica, compilare: 
+7. Attività successiva: aprendo il menù a tendina, selezionare uno dei due valori: 
+CODICE ATTIVITÀ SUCCESSIVA DESCRIZIONE
+016 
+	Riparazione in officina 
+	Quando il prodotto viene riparato in PdV
+	017 
+	Riparazione esterna 
+	Quando il prodotto viene spedito al CAT
+	
+
+
+
+51 
+
+8. Per l’Attività successiva 017 Riparazione esterna, compilare il campo Fornitore con il  codice CAT (per 016 Riparazione in officina questo campo non è obbligatorio): 
+9. Selezionare Salvare e confermare (in alto, a destra). 
+
+Il sistema mostra in basso a sinistra un messaggio di conferma del salvataggio dell’ispezione. 
+STEP E APPLICAZIONI SUCCESSIVE 
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo.
+PROCESSO 
+	STEP SUCCESSIVO 
+	APP 
+	CAPITOLO
+	Assistenza cliente con invio  al CAT
+	Invio del prodotto al CAT - consegna in uscita ed uscita  merci
+	Monitor lavorazione esterna 
+	4.4
+	
+
+
+
+52 
+
+4.4 Monitor lavorazione esterna 
+L’app Monitor lavorazione esterna consente di creare la consegna in uscita e registrazione l’uscita  merce relativa ad un ordine di riparazione esterna per merce sia di proprietà cliente sia Unieuro. 
+Di seguito il box identificativo dell’app: 
+
+Accedendo all’app, apparirà la seguente schermata: 
+In questa schermata: 
+1. Nella sezione Documenti singoli, compilare il campo Ordine d’acquisto con il numero  dell’ordine di riparazione per la quale si vuole creare una consegna e registrazione l’uscita  merci 
+2. Selezionare Esegui 
+3. Visualizzare l’intero flusso dei documenti espandendo la sezione attraverso il clic sulla  freccia accanto alla cartella. Questo permetterà di mostrare tutti i documenti collegati  all’ordine;
+53 
+
+
+4. Selezionare la riga relativa all’Ordine d’acquisto; 
+5. Selezionare Consegna per ord. acquisto per creare la consegna in uscita.
+54 
+
+6. Nella seguente schermata, selezionare Crea consegna: 
+7. Selezionare la spunta verde nel seguente messaggio con il codice della consegna. 
+
+A questo punto, sotto la riga dell’ordine d’acquisto viene mostrata la riga relativa alla consegna  appena creata.
+55 
+
+8. Flaggare il campo relativo alla consegna 
+9. Selezionare il tab Consegna; 
+10. Selezionare Visualizzare documento. 
+
+11. Il sistema mostra la schermata di visualizzazione della consegna, selezionare Visualizza <- ->  Modifica per modificare la consegna. 
+12. All’interno del tab Prelievo inserire nel campo Qtà. Prelevata la quantità. 
+13. In alto a destra selezionare Reg. uscita merci.
+56 
+
+In automatico il sistema genera il documento di trasporto: 
+
+Il sistema restituisce, il messaggio di conferma della registrazione uscita merci, in basso a sinistra: 
+STEP E APPLICAZIONI SUCCESSIVE 
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo.
+PROCESSO 
+	STEP SUCCESSIVO 
+	APP 
+	CAPITOLO
+	Assistenza cliente con invio al CAT
+	Inserimento  
+aggiornamento in tabella  monitoraggio stati 
+	Report riparazioni 
+	4.5
+	Riparazione merce Unieuro con invio al CAT
+	Inserimento  
+aggiornamento in tabella  monitoraggio stati 
+	Report riparazioni 
+	4.5
+	
+
+
+
+57 
+
+4.5 Report riparazioni 
+L’app Report riparazioni consente di monitorare lo stato delle riparazioni e di aggiornare gli stati  utente in base all’avanzamento della scheda di riparazione (Unieuro o Cliente). 
+Per le riparazioni Unieuro lo stato di chiusura della scheda verrà inserito tramite quest’app. 
+Tale report permette di visualizzare e/o inserire due tipologie di stati che garantiscono il tracciamento  dell’avanzamento della riparazione: 
+• STATO SAP DELLA RIPARAZIONE: vengono popolati automaticamente grazie alle operazioni  che vengono eseguite a sistema (es. creazione scheda, uscita merci verso CAT, entrata merci  da CAT, restituzione prodotto a cliente) 
+• STATO UTENTE: stati da inserire manualmente per garantire un corretto tracciamento di  tutte le informazioni relative alla riparazione di un prodotto (es. CAT contattato, preventivo  ricevuto, preventivo inviato al cliente, prodotto pronto al ritiro, etc.) la lista completa dei  campi è presentata nei sottocapitoli successivi. 
+Di seguito il box identificativo dell'app: 
+
+Dopo aver selezionato il box e avviato l’app, si apre la schermata iniziale.
+58 
+
+
+1. Selezionare la tipologia da visualizzare: 
+a. Riparazioni Merce Unieuro; 
+b. Riparazioni Merce Cliente. 
+2. Selezionare la tipologia di estrazione che si intende effettuare. Il sistema consente di fare  due tipologie di estrazioni, tramite la selezione di uno dei seguenti radio button: 
+a. Estrazione storico: consente la visualizzazione dello storico in base al filtro di input  selezionato  
+b. Estrazione ultimo dato scheda: consente la visualizzazione dell’ultimo step eseguito  a sistema in base al filtro di input selezionato 
+3. Per le sole riparazioni cliente, inserire almeno un parametro di ricerca tra quelli elencati di  seguito: 
+a. Nr. Telefono Scheda Cliente; 
+b. Nr. Fattura; 
+c. Nr. Scheda; 
+d. Nr. Ordine Hybris; 
+e. Nr. Scontrino; 
+f. RMA; 
+g. Nome e Cognome presenti sulla Scheda Cliente; 
+NB: nome e cognome devono essere scritti esattamente come sulla scheda (es. tutto  minuscolo, tutto maiuscolo, prima iniziale maiuscola etc.) altrimenti il sistema non  trova il match 
+N.B. Questi parametri di ricerca non sono mostrati in caso di riparazioni Unieuro 
+4. Selezionare Ricerca.
+59 
+
+Il report mette a disposizione tre funzionalità, tramite i tre pulsanti sotto riportati (partendo da  sinistra):  
+
+• Il primo a permettere di estrarre il report in un file excel;  
+• Il secondo permette di inserire uno stato utente con la relativa nota; 
+• Il terzo permette di aggiornare l’estrazione, ha la funzionalità di refresh. 
+Per aggiornare lo storico della riparazione con informazioni extra sistema, procedere quindi con  l’inserimento stato utente: 
+5. Selezionare una riga relativa alla scheda per la quale si vuole inserire lo Stato Utente 6. Cliccare il pulsante con la rotellina, come mostrato nella schermata successiva. 
+Viene visualizzato il seguente pop-up:
+
+60 
+
+7. Selezionare lo stato utente che si intende inserire tra quelli proposti nel menù a tendina  8. Se necessario, inserire ulteriori dettagli aggiuntivi nel campo Nota utente 
+9. Selezionare OK. 
+10. Per chiudere il pop-up cliccare su Cancel 
+La schermata si aggiorna automaticamente, con l’ultimo stato utente inserito: 
+N.B. SOLO PER LE RIPARAZIONI MERCE UNIEURO: Al termine della riparazione, l’utente ha la  possibilità di inserire lo stato Chiusura scheda Unieuro per tracciare le modalità di chiusura delle riparazioni merce Unieuro. 
+STEP E APPLICAZIONI SUCCESSIVE 
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo.
+PROCESSO 
+	STEP SUCCESSIVO 
+	APP 
+	CAPITOLO
+	Assistenza cliente con invio al CAT
+	Ricezione del prodotto  riparato - consegna in  entrata ed entrata merci
+	Cruscotto entrate merci 
+	4.6
+	Assistenza cliente con  riparazione in PDV
+	Creazione documento per  consegna a cliente e  registrazione uscita merci  verso il cliente
+	Monitora rimborsi  
+cliente 
+	4.2
+	Assistenza cliente con  riparazione in PDV
+	Inserimento dettaglio di  chiusura riparazione 
+	Monitora rimborsi  
+cliente 
+	4.2
+	Riparazione merce Unieuro con invio al CAT
+	Registrazione entrata  merci 
+	Cruscotto entrate merci 
+	4.6
+	
+
+
+
+61 
+
+4.6 Cruscotto Entrate Merci 
+L’app Cruscotto Entrate Merci consente di creare le forniture, consegne in entrata e registrare  entrate merci per: 
+• Assistenze/riparazioni di proprietà cliente e proprietà Unieuro.  
+• Tutti i carichi merce che non provengono dalle Piattaforme (es. da altro store, da CRR, da  fornitore, etc.) 
+Di seguito il box identificativo dell’app: 
+
+Dopo aver selezionato il box e avviato l’app, si apre la schermata iniziale che dispone di due funzioni: 
+• Entrata merci per STO da Store/CRR/Reverse: permette di registrare entrate merci a fronte  di trasferimenti interni, quindi sia trasferimenti tra punti vendita sia trasferimenti da  CRR/Reverse; 
+• Entrata merci per OdA da Fornitore: permette di registrare entrate merci a fronte di ordini  d'acquisto al fornitore e a fronte di rientri di prodotti legati a assistenze/riparazioni di  proprietà cliente e proprietà Unieuro. 
+Nei seguenti paragrafi sono presentate tutte le casistiche di utilizzo del cruscotto entrate merci.
+62 
+
+4.6.1 Entrata di Assistenze/Riparazioni 
+Per i carichi merce legati a assistenze/riparazioni di proprietà cliente e proprietà Unieuro selezionare Entrata merci per OdA da Fornitore. 
+Viene visualizzata la seguente schermata: 
+Compilare i seguenti campi obbligatori: 
+1. N. DDT; 
+2. Fornitore SAP/Strike con il codice fornitore;
+63 
+
+N.B. Inserendo il numero del DDT e il codice fornitore SAP/Strike, SAP restituisce tutte le  posizioni d’ordine per le quali risulta un ordine di riparazione aperto verso il fornitore indicato. In  alternativa, è possibile inserire direttamente il numero dell’ODA per ottenere un’estrazione  mirata. 
+3. Selezionare Esegui. 
+Viene visualizzata la seguente schermata in cui è necessario: 
+4. Selezionare la riga; 
+5. Inserire la quantità di consegna; 
+6. Cliccare su Applica. 
+Dopo aver selezionato Applica, viene visualizzata la seguente schermata:
+64 
+
+7. Selezionare la riga; 
+8. Compilare il campo Etichetta Barcode: campo obbligatorio, ma dal momento che nei  processi di riparazione non è previsto un’associazione tra documento di carico ed etichetta  barcode, nel campo è possibile inserire anche un “.”; 
+9. Compilare il campo Lettera di vettura: con lo stesso numero inserito nel campo N. DDT; 10. Selezionare Registra EM. 
+Viene visualizzata la seguente schermata nella quale è necessario: 
+11. inserire la data del documento di elaborazione del DDT da parte del Fornitore/CAT: 
+12. Selezionare Applica per visualizzare la schermata di conferma della registrazione:  
+STEP E APPLICAZIONI SUCCESSIVE 
+Di seguito sono indicate le applicazioni da utilizzare per le diverse casistiche legate all’app descritta in  questo capitolo. 
+PROCESSO STEP SUCCESSIVO APP CAPITOLO
+Assistenza cliente con invio  al CAT
+	Riconsegna al cliente e  chiusura scheda con causale 
+	Monitora rimborsi cliente 
+	4.2
+	Assistenza cliente con invio  al CAT, in garanzia non  riparabile
+	Registrazione uscita merci  verso Fornitore 
+	Crea consegna in uscita 
+	4.7
+	Riparazione merce Unieuro  con invio al CAT
+	Inserimento dettaglio di  chiusura riparazione 
+	Report riparazioni 
+	4.5
+	
+
+
+
+65 
+
+4.6.2 Entrata di Acquisti da Fornitore 
+Per registrare entrate merci a fronte di acquisti da fornitore cliccare su “Entrata merci per OdA da  Fornitore”. 
+
+4.6.2.1 Registrazione EM per DDT elettronico 
+Una volta cliccato il box Entrata merci per OdA da Fornitore, viene visualizzata la seguente schermata:  Compilare i seguenti campi obbligatori per procedere con la registrazione dell’entrata merci: 1. N. DDT; 
+2. Fornitore SAP/STRIKE con il codice fornitore SAP o STRIKE. 
+NB: Per ulteriori info sulla ricerca dell’ordine d’acquisto, proseguire nella lettura del paragrafo Altri  parametri di ricerca; altrimenti passare direttamente al paragrafo Registrazione Entrata merci.
+66 
+
+4.6.2.1.1 Altri parametri di ricerca 
+Il campo N. DDT dispone della funzionalità matchcode ( ), che permette la ricerca a sistema del  numero del documento di trasporto. Una volta cliccato il matchcode, si apre il seguente pop-up: 
+In questa schermata è possibile: 
+• Inserire eventuali criteri di ricerca nei campi evidenziati (fornitore o la data di consegna) e  cliccare su cercare. 
+• in alternativa, avviare la ricerca lasciando i campi vuoti. In questo modo vengono estratti  tutti i DDT in arrivo presso il negozio, con evidenza di lettera di vettura (numero DDT), data  di consegna e fornitore, come mostrato di seguito: 
+
+Selezionare il DDT nel campo Lettera di vettura e cliccare sull’icona di conferma (✔) per proseguire.
+67 
+
+Ulteriori campi che possono essere utilizzati come parametro di ricerca sono i seguenti: • Numero ODA: il numero dell'ordine d'acquisto; 
+• Data del DDT. 
+Per tali campi è presente il bottone Selezione Multipla, per dare la possibilità di inserire più valori, ad  esempio nel caso in cui all’interno di un DDT siano contenuti più ordini di acquisto. 
+
+Nella schermata di selezione multipla occorre inserire i valori di interesse e cliccare sull’icona  Rilevare, contrassegnata da un orologio, in basso.
+68 
+
+4.6.2.1.2 Registrazione Entrata Merci 
+Una volta inseriti i dati per la ricerca dell’ordine di acquisto, cliccare sul pulsante in basso a destra  Execute. 
+
+Viene visualizzata schermata in basso, in cui: 
+1. Compilare il campo “Etichetta Barcode” con l’etichetta generata precedentemente tramite  l’app Stampa etichette (capitolo 4.20); 
+2. Cliccare sul pulsante Registra EM.
+69 
+
+3. Infine, viene mostrato il popup di conferma della registrazione dell’entrata merci, in cui è  necessario cliccare sul pulsante Continuare. 
+
+4.6.2.2 Registrazione EM per DDT non elettronico 
+Una volta cliccato il box Entrata merci per OdA da Fornitore, compare la schermata mostrata in  seguito, in cui è necessario compilare i seguenti campi obbligatori in testata: 
+1. N. DDT; 
+2. Fornitore SAP/STRIKE con il codice fornitore SAP o STRIKE. 
+3. Una volta inseriti i dati obbligatori, cliccare sul pulsante in basso a destra Execute. Il sistema restituirà la lista di ordini d’acquisto in arrivo presso il proprio negozio da quel fornitore.
+70 
+
+Nella seguente schermata occorre: 
+4. selezionare le righe degli ordini per cui registrare l’entrata merce; 
+5. inserire la quantità presente nel DDT cartaceo; 
+6. infine cliccare su Applica. 
+6
+4 1 
+5 2 
+Viene visualizzata la seguente schermata dove occorre compilare i campi: 
+7. Etichetta Barcode con l’etichetta generata precedentemente tramite l’app Stampa etichette  (capitolo 4.20) 
+8. Lettera di vettura con il numero DDT. 
+9. Successivamente cliccare su Registra EM. 
+71 
+
+10. Sul popup di conferma della data di entrata merci, è necessario cliccare sul pulsante Applica 
+11. Infine, sul pop-up di conferma della registrazione dell’entrata merci, cliccare su Continuare.
+72 
+
+4.6.2.3 Gestione delle discrepanze 
+Durante la fase di entrata merce a fronte di ordini di acquisto da forniture potrebbero verificarsi delle  discrepanze rispetto al DDT in arrivo, che possono essere distinte in tre tipologie: 
+• Eccedenze 
+• Mancanze 
+• Merce danneggiata 
+4.6.2.3.1 Eccedenze/Mancanze 
+Se per una specifica riga dell’ordine la quantità in entrata è superiore/inferiore alla quantità presente  nel DDT: 
+1. inserire il flag sulla riga 
+2. cliccare sul bottone Discrepanza 
+Compare un pop-up in cui la quantità vendibile è precompilata con quella indicata nel DDT. 3. É necessario sostituire il numero con la quantità effettivamente ricevuta dal fornitore: • Eccedenza: Nell’esempio la quantità precompilata è 10, ma viene modificata a 12; 
+• Mancanza: In una mancanza si procede ugualmente con la modifica della quantità  precompilata, ma al ribasso (es. da 12 pezzi presenti nel DDT, ne ho ricevuti solo 10). 
+4. Successivamente, cliccare sul pulsante Applica.
+73 
+
+Il sistema inserisce in automatico il flag sul campo Discrepanza e popola il campo Quantità  vendibile con la quantità inserita nello step precedente. 
+Completata la registrazione delle discrepanze su tutte le righe coinvolte, occorre: 
+5. Compilare il campo “Etichetta Barcode” con l’etichetta generata precedentemente tramite  l’app Stampa etichette (capitolo 4.20); 
+6. Assicurarsi che il campo “Lettera di vettura” contenga il numero DDT (caso DDT elettronico),  altrimenti compilarlo a mano. 
+7. Infine, cliccare sul pulsante Registra EM. 
+8. Viene visualizzato il pop-up di conferma della registrazione dell’entrata merci in cui è  necessario cliccare su Continuare.
+
+74 
+
+4.6.2.3.2 Merce danneggiata 
+Se per una specifica riga dell’ordine si riceve merce danneggiata: 
+1. inserire il flag sulla riga 
+2. cliccare sul bottone Discrepanza: 
+Compare un pop-up in cui la quantità vendibile è precompilata con quella indicata nel DDT: 
+3. Qui è necessario sostituire il numero con la quantità effettivamente vendibile ricevuta dal  fornitore: nell’esempio che segue la quantità precompilata è 10, ma viene modificata a 9. 
+4. Inoltre, la quantità danneggiata viene segnalata nel campo QtaDanneg: nell’esempio che  segue, la quantità danneggiata è 1. 
+5. Successivamente, cliccare sul pulsante Applica. 
+Il sistema inserisce in automatico il flag sul campo Discrepanza e popola il campo Quantità  vendibile e Quantità danneggiata con le quantità inserita nel pop-up.
+75 
+
+Completata la registrazione delle discrepanze su tutte le righe coinvolte, occorre: 
+6. Compilare il campo “Etichetta Barcode” con l’etichetta generata precedentemente tramite  l’app Stampa etichette (capitolo 4.20); 
+7. Assicurarsi che il campo “Lettera di vettura” contenga il numero DDT (caso DDT elettronico),  altrimenti compilarlo a mano. 
+8. Infine, cliccare sul pulsante Registra EM. 
+
+9. A questo punto, viene mostrato il riepilogo delle discrepanze e per procedere con la  registrazione dell’entrata merce cliccare sulla spunta verde. 
+
+10. Viene visualizzato il popup di conferma della registrazione dell’entrata merci in cui è  necessario cliccare su Continuare.
+
+76 
+
+4.6.3 Entrata di Trasferimenti interni  
+Per registrare carichi merce relativi a trasferimenti interni (tra PDV, da CRR o Reverse), selezionare  Entrata merci per STO da Store/CRR/Reverse. 
+Viene visualizzata la seguente schermata: 
+
+1 Compilare il N. DDT 
+2 Cliccare su Esegui.
+77 
+
+Viene mostrata la schermata con il dettaglio del DDT. 
+Da qui: 
+3 Selezionare le righe del DDT per cui registrare l’Entrata merci, spuntando l’apposito flag; 4 Cliccare su Registra EM. 
+A questo punto, viene visualizzato il pop-up di conferma della registrazione dell’entrata merci. 
+5. Cliccare su Continuare per completare l’operazione.
+78 
+
+4.6.3.1 Gestione delle discrepanze 
+Durante la fase di entrata merce a fronte di ordini di trasferimento da altri PDV potrebbero verificarsi  delle discrepanze rispetto al DDT in arrivo. 
+A differenza delle entrate da fornitore, in questi casi l’unico tipo di discrepanza rilevabile tramite  l’app Cruscotto Entrate Merci è quella relativa a merce danneggiata. 
+NB: le discrepanze di tipo quantitativo (eccedenze o mancanze) non vengono gestite tramite l’app, ma  vengono gestite tramite ribollettazioni fuori sistema. 
+Per la gestione della discrepanza di tipo merce danneggiata, fare riferimento al capitolo 4.6.2.3.2, che  descrive la procedura per i casi di entrata merci da fornitore.
+79
