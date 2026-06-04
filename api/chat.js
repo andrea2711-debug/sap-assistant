@@ -2,8 +2,7 @@ const Anthropic = require("@anthropic-ai/sdk");
 const fs = require("fs");
 const path = require("path");
 
-const client = new Anthropic.default({ apiKey: process.env.ANTHROPIC_API_KEY });
-
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 function loadManuale() {
   const dir = path.join(process.cwd(), "manuale");
   if (!fs.existsSync(dir)) return null;
