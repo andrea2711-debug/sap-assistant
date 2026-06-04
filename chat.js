@@ -1,8 +1,8 @@
-import Anthropic from "@anthropic-ai/sdk";
-import fs from "fs";
-import path from "path";
+const Anthropic = require("@anthropic-ai/sdk");
+const fs = require("fs");
+const path = require("path");
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new Anthropic.default({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 function loadManuale() {
   const dir = path.join(process.cwd(), "manuale");
@@ -14,7 +14,7 @@ function loadManuale() {
   return fs.readFileSync(path.join(dir, files[0]), "utf-8");
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Metodo non consentito" });
   }
@@ -32,13 +32,12 @@ Quando spieghi una procedura:
 - Elenca i passaggi in modo numerato e chiaro
 - Usa un linguaggio semplice e diretto
 - Evidenzia eventuali avvertenze importanti
-- Se necessario, suggerisci a quale sezione del manuale fare riferimento
 
 MANUALE SAP:
 ---
 ${manuale}
 ---`
-    : `Sei un assistente SAP. Nessun manuale è stato caricato sul server. Comunica all'utente che il manuale non è ancora stato configurato dall'amministratore.`;
+    : `Sei un assistente SAP. Nessun manuale è stato caricato. Comunicalo all'utente.`;
 
   try {
     const response = await client.messages.create({
@@ -53,4 +52,4 @@ ${manuale}
     console.error(err);
     res.status(500).json({ error: "Errore durante la risposta dell'AI" });
   }
-}
+};
