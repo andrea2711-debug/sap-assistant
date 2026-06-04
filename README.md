@@ -81,4 +81,4 @@ Vercel ti darà un link tipo `https://sap-assistant-xxx.vercel.app` — condivid
 |----------|-----------|
 | "Manuale non configurato" | Controlla che ci sia un file `.txt` nella cartella `manuale/` |
 | Errore 500 | Verifica che la variabile `ANTHROPIC_API_KEY` sia impostata su Vercel |
-| Risposte lente | Normale, dipende dalla lunghezza del manuale |
+| Risposte lente | Normale, dipende dalla lunghezza del manuale | 
